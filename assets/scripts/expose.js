@@ -6,9 +6,9 @@ function init() {
   // TODO
 
   // Horn image and audio sound file changes
-  let horn = document.getElementById('horn-select');
-  let hornImage = document.querySelector('section#expose img');
-  let sound = document.querySelector('audio');
+  const horn = document.getElementById('horn-select');
+  const hornImage = document.querySelector('section#expose img');
+  const sound = document.querySelector('audio');
   horn.addEventListener('change', function() {
     if (horn.value == 'air-horn') {
       hornImage.src = 'assets/images/air-horn.svg';
@@ -26,8 +26,8 @@ function init() {
   });
 
   // Volume on slider and volume image changes
-  let volume = document.getElementById('volume');
-  let volumeImage= document.querySelector('div#volume-controls img');
+  const volume = document.getElementById('volume');
+  const volumeImage= document.querySelector('div#volume-controls img');
   volume.addEventListener('input', function() {
     if (volume.value == 0) {
       volumeImage.src = 'assets/icons/volume-level-0.svg';
@@ -46,7 +46,7 @@ function init() {
   });
 
   // Volume on slider and volume image changes
-  let playButton = document.querySelector('button');
+  const playButton = document.querySelector('button');
   const jsConfetti = new JSConfetti();
   playButton.addEventListener('click', function() {
     if (horn.value == 'party-horn') {
