@@ -2,8 +2,8 @@
 Name: Phuong Dinh
 
 ### Site:  
-[expose.html](expose.html)
-[explore.html](explore.html)
+- [expose.html](expose.html)
+- [explore.html](explore.html)
 
 ### Pt. 3
 1. I would not use a unit test to test the "message" feature as a whole because this feature requires interaction between the "message" component for 2 users on an application level. This is not something a unit test is good at for testing. Moreover, the "message" feature also may involve other bigger components, which a unit test is not fit to test. However, if the "message" feature were broken up into smaller parts, I would use a unit test to test those smaller components.
