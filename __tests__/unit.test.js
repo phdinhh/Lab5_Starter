@@ -87,10 +87,10 @@ test('check #fgffff to be invalid hex color', () => {
   expect(isHexColor('#fgffff')).toBe(false);
 });
 
-test('check #ffffff to be invalid hex color', () => {
+test('check #ffffff to be valid hex color', () => {
   expect(isHexColor('#ffffff')).toBe(true);
 });
 
-test('check f123ee to be invalid hex color', () => {
+test('check f123ee to be valid hex color', () => {
   expect(isHexColor('f123ee')).toBe(true);
 });
